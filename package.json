@@ -9,14 +9,19 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "generate-types": "wrangler types"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^13.6.1",
     "@astrojs/mdx": "^6.0.1",
-    "@astrojs/node": "^10.1.2",
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.3",
     "astro": "^6.4.2",
-    "sharp": "^0.34.3"
+    "sharp": "^0.34.3",
+    "wrangler": "^4.97.0"
+  },
+  "overrides": {
+    "vite": "^7"
   }
 }

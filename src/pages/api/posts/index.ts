@@ -4,11 +4,7 @@ import { getCollection, getEntry } from "astro:content";
 export const prerender = false;
 
 export const GET: APIRoute = async ({ params, request }) => {
-  
-  
-  console.log(request)
-  // console.log(url)
-  
+    
   const url = new URL(request.url)
   const id = url.searchParams.get('id')
   
