@@ -14,14 +14,13 @@
   },
   "dependencies": {
     "@astrojs/cloudflare": "^13.6.1",
+    "@astrojs/db": "^0.21.2",
     "@astrojs/mdx": "^6.0.1",
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.3",
-    "astro": "^6.4.2",
+    "astro": "^6.4.3",
+    "hast-util-raw": "^9.1.0",
     "sharp": "^0.34.3",
     "wrangler": "^4.97.0"
-  },
-  "overrides": {
-    "vite": "^7"
   }
 }

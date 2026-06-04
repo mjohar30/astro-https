@@ -6,10 +6,15 @@ import { defineConfig, fontProviders } from 'astro/config';
 
 import cloudflare from '@astrojs/cloudflare';
 
+import db from '@astrojs/db';
+
+const isDev = process.env.NODE_ENV === 'development';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://example.com',
-  integrations: [mdx(), sitemap()],
+  output: 'server',
+  integrations: [db(), mdx(), sitemap()],
 
   fonts: [
       {
@@ -36,5 +41,5 @@ export default defineConfig({
       },
   ],
 
-  adapter: cloudflare(),
+  adapter: isDev ? undefined : cloudflare(),
 });
