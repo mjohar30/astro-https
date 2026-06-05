@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@astrojs/cloudflare": "^13.6.1",
-    "@astrojs/db": "^0.21.2",
+    "@astrojs/db": "https://pkg.pr.new/@astrojs/db@9739595",
     "@astrojs/mdx": "^6.0.1",
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.3",
